@@ -22,11 +22,11 @@
     </div>
     <div class="main-container max-w-6xl mx-auto mt-12 space-y-6">
         <div class="recently-post-container bg-gray-100 border border-red-700 border-opacity-50 rounded-xl hover:opacity-75 transition ease-in-out duration-700">
-            <div class="p-6 flex flex-row justify-between">
-                <div class="flex-1 mr-8">
+            <div class="p-6 lg:flex flex-row justify-between">
+                <div class="flex-1 lg:mr-8">
                     <img src="{{ asset('img/illustration-1.png') }}" alt="illustration" class="rounded-xl">
                 </div>
-                <div class="flex-1 flex flex-col justify-between">
+                <div class="flex-1 flex flex-col justify-between mt-8 lg:mt-0">
                     <div class="space-x-2">
                         <a href="#" class="px-3 py-1 border border-blue-300 rounded-full text-blue-500 text-xs uppercase font-semibold">Techniques</a>
                         <a href="#" class="px-3 py-1 border border-red-300 rounded-full text-red-500 text-xs uppercase font-semibold">Updates</a>
@@ -49,7 +49,7 @@
                                 <h6>Mascot at Laracasts</h6>
                             </div>
                         </div>
-                        <div>
+                        <div class="hidden lg:block">
                             <a href="#" class="text-xs font-semibold bg-blue-600 ml-3 rounded-full py-3 px-8 hover:bg-blue-700 transition ease-in-out duration-150">Read More</a>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
             </div>
         </div> <!-- end recently post container -->
 
-        <div class="secondary-post-container grid grid-cols-2">
+        <div class="secondary-post-container lg:grid lg:grid-cols-2">
             @for ($i = 0; $i < 2; $i++)
                 <div class="bg-gray-100 border border-red-700 border-opacity-50 rounded-xl hover:opacity-75 transition ease-in-out duration-700">
                     <div class="p-6">
@@ -87,7 +87,7 @@
                                         <h6>Mascot at Laracasts</h6>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden lg:block">
                                     <a href="#" class="text-xs font-semibold bg-blue-600 ml-3 rounded-full py-3 px-8 hover:bg-blue-700 transition ease-in-out duration-150">Read More</a>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
             @endfor
         </div> <!-- end secondary post container -->
 
-        <div class="third-post-container grid grid-cols-3">
+        <div class="third-post-container lg:grid lg:grid-cols-3">
             @for ($i = 0; $i < 3; $i++)
                 <div class="bg-gray-100 border border-red-700 border-opacity-50 rounded-xl hover:opacity-75 transition ease-in-out duration-700">
                     <div class="p-6">
@@ -127,7 +127,7 @@
                                         <h6>Mascot at Laracasts</h6>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden lg:block">
                                     <a href="#" class="text-xs font-semibold bg-blue-600 ml-3 rounded-full py-3 px-8 hover:bg-blue-700 transition ease-in-out duration-150">Read More</a>
                                 </div>
                             </div>
