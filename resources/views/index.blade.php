@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    <div class="main-container max-w-6xl mx-auto mt-12 space-y-6">
+    <div class="main-container max-w-6xl mx-auto mt-12 md:mt-20 space-y-6">
         <div class="recently-post-container bg-gray-100 border border-red-700 border-opacity-50 rounded-xl hover:opacity-75 transition ease-in-out duration-700">
             <div class="p-6 lg:flex flex-row justify-between">
                 <div class="flex-1 lg:mr-8">
@@ -64,7 +64,7 @@
                         <div class="">
                             <img src="{{ asset('img/illustration-2.png') }}" alt="illustration" class="rounded-xl">
                         </div>
-                        <div class="flex flex-col justify-between mt-8">
+                        <div class="flex flex-col justify-between mt-8 md:mt-0">
                             <div class="space-x-2">
                                 <a href="#" class="px-3 py-1 border border-blue-300 rounded-full text-blue-500 text-xs uppercase font-semibold">Techniques</a>
                                 <a href="#" class="px-3 py-1 border border-red-300 rounded-full text-red-500 text-xs uppercase font-semibold">Updates</a>
