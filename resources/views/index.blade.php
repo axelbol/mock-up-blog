@@ -10,9 +10,10 @@
             <p class="text-sm mt-10">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias rerum reprehenderit voluptates expedita quae at odit sapiente vel impedit, excepturi nemo debitis laboriosam rem harum exercitationem officia amet mollitia eos?
             </p>
+            <!-- Search Field -->
             <div class="flex items-center justify-center mt-8">
                 <div class="relative">
-                    <input type="text" name="" id="" class="bg-gray-800 text-sm rounded-full w-64 px-3 pl-8 py-1" placeholder="Search...">
+                    <input type="search" name="" id="" class="bg-gray-800 placeholder-gray-500 text-sm rounded-full w-full px-12 pl-8 py-1" placeholder="Buscar...">
                     <div class="absolute top-0 flex items-center h-full ml-2">
                         <svg class="fill-current text-gray-400 w-4" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
                     </div>

@@ -13,7 +13,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="px-28 py-8 bg-gray-800 text-gray-100 ">
+    <body class="px-28 py-8 bg-gray-800 text-gray-100">
         <header class="border-b border-gray-600">
             <nav class="md:flex md:justify-between md:items-center pb-8">
                 <div>
@@ -21,33 +21,46 @@
                         <img src="{{ asset('img/logo.svg') }}" alt="logo" class="w-40">
                     </a>
                 </div>
-                <div class="mt-8 md:mt-0 uppercase md:flex md:justify-between md:items-center space-x-3">
+                <div
+                    x-data="{ isOpen: false }"
+                    class="mt-8 md:mt-0 uppercase md:flex md:justify-between md:items-center space-x-3"
+                >
                     <a href="#" class="text-xs font-bold hover:text-gray-300">Home</a>
                     <a href="#" class="text-xs font-semibold bg-blue-600 rounded-full py-3 px-5 hover:bg-blue-700 transition ease-in-out duration-150">Subscribe for updates</a>
-                    <div class="relative">
-                        <a href="#" class="hidden md:block">
+                    <div
+                        @click="isOpen = !isOpen"
+                        class="relative"
+                    >
+                        <button class="hidden md:block">
                             <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="avatar" class="w-10 h-10 rounded-full">
-                        </a>
-                        <div class="px-4 py-6 absolute z-10 w-40 text-left font-semibold text-sm bg-white shadow-pink-400 shadow-lg rounded-xl mt-2 text-green-700 md:top-10 md:right-0">
+                        </button>
+                        <div
+                            x-cloak
+                            x-show="isOpen"
+                            x-transition
+                            @click.away="isOpen = false"
+                            @keydown.escape.window="isOpen = false"
+                            class="px-4 py-6 absolute z-10 w-40 text-left font-semibold text-sm bg-white shadow-pink-400 shadow-lg rounded-xl mt-2 text-green-700 md:top-10 md:right-0"
+                        >
                             @if (Route::has('login'))
                                 <div class="flex flex-col space-y-2">
                                     @auth
-                                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 hover:text-pink-600">Dashboard</a>
+                                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 transition duration-150 ease-in hover:text-pink-600">Dashboard</a>
 
                                         <!-- Authentication -->
                                         <form method="POST" action="{{ route('logout') }}">
                                             @csrf
-                                            <a href="{{ route('logout') }}" class="text-sm text-gray-700 hover:text-pink-600"
+                                            <a href="{{ route('logout') }}" class="text-sm text-gray-700 transition duration-150 ease-in hover:text-pink-600"
                                                     onclick="event.preventDefault();
                                                                 this.closest('form').submit();">
                                                 {{ __('Log Out') }}
                                             </a>
                                         </form>
                                     @else
-                                        <a href="{{ route('login') }}" class="text-sm text-gray-700 hover:text-pink-600">Log in</a>
+                                        <a href="{{ route('login') }}" class="text-sm text-gray-700 transition duration-150 ease-in hover:text-pink-600">Log in</a>
 
                                         @if (Route::has('register'))
-                                            <a href="{{ route('register') }}" class="text-sm text-gray-700 hover:text-pink-600">Register</a>
+                                            <a href="{{ route('register') }}" class="text-sm text-gray-700 transition duration-150 ease-in hover:text-pink-600">Register</a>
                                         @endif
                                     @endauth
                                 </div>
