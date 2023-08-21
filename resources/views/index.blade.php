@@ -21,37 +21,40 @@
             </div>
         </div>
     </div>
+
     <div class="main-container max-w-6xl mx-auto mt-12 md:mt-20 space-y-6">
-        <div class="recently-post-container bg-gray-100 border border-red-700 border-opacity-50 rounded-xl hover:opacity-75 transition ease-in-out duration-700">
+        <div class="recently-post-container bg-gray-100 border border-red-800 border-opacity-50 rounded-xl hover:shadow-md hover:shadow-green-500 transition ease-in duration-150 cursor-pointer">
             <div class="p-6 lg:flex flex-row justify-between">
                 <div class="flex-1 lg:mr-8">
                     <img src="{{ asset('img/illustration-1.png') }}" alt="illustration" class="rounded-xl">
                 </div>
                 <div class="flex-1 flex flex-col justify-between mt-8 lg:mt-0">
                     <div class="space-x-2">
-                        <a href="#" class="px-3 py-1 border border-blue-300 rounded-full text-blue-500 text-xs uppercase font-semibold">Techniques</a>
-                        <a href="#" class="px-3 py-1 border border-red-300 rounded-full text-red-500 text-xs uppercase font-semibold">Updates</a>
+                        <button class="bg-fuchsia-700 border border-gray-700 hover:border-fuchsia-400 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in px-3 py-1">Updates</button>
+                        <button class="bg-orange-600 border border-orange-600 hover:border-orange-300 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in px-3 py-1">Techniques</button>
                     </div>
                     <div class="mt-4">
                         <div class="text-cyan-600 tracking-wide font-semibold text-3xl text-left">This is a big title and it will look great on two or even three lines. Woohoo!</div>
-                        <span class="mt-2 block text-gray-800 text-xs">
-                            Published <time>1 day ago</time>
-                        </span>
+                        <div class="mt-2 flex items-center text-xs text-gray-800 font-semibold space-x-2">
+                            <div>Published 1 day ago</div>
+                            <div>&bull;</div>
+                            <div class="text-red-800">3 Comments</div>
+                        </div>
                     </div>
-                    <div class="text-neutral-800 tracking-wide text-sm mt-2 text-justify">
+                    <div class="text-neutral-800 tracking-wide text-sm mt-2 text-justify line-clamp-6">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla dolor velit officia quis iusto dolorum cumque voluptatum reprehenderit totalique beatae nihil ipsa! Saepe magni doloribus magnam cupiditate ipsum quis sint.</p>
                         <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque dolore et eveniet saepe aliquam dolor facere maxime! Vero ratione atque ad distinctio</p>
                     </div>
                     <div class="flex justify-between items-center mt-8">
                         <div class="flex items-center text-sm">
-                            <img src="{{ asset('img/lary-avatar.svg') }}" alt="lary avatar">
+                            <img src="{{ asset('img/lary-avatar.svg') }}" alt="lary avatar" class="w-14 h-14 rounded-xl">
                             <div class="ml-3 text-fuchsia-600">
                                 <h5 class="font-bold">Lary Laracore</h5>
                                 <h6>Mascot at Laracasts</h6>
                             </div>
                         </div>
                         <div class="hidden lg:block">
-                            <a href="#" class="text-xs font-semibold bg-blue-600 ml-3 rounded-full py-3 px-8 hover:bg-blue-700 transition ease-in-out duration-150">Read More</a>
+                            <a href="#" class="text-xxs font-semibold bg-blue-600 border border-blue-600 ml-3 rounded-full py-2 px-6 hover:bg-blue-700 transition ease-in-out duration-150">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -67,29 +70,31 @@
                         </div>
                         <div class="flex flex-col justify-between mt-8 md:mt-0">
                             <div class="space-x-2">
-                                <a href="#" class="px-3 py-1 border border-blue-300 rounded-full text-blue-500 text-xs uppercase font-semibold">Techniques</a>
-                                <a href="#" class="px-3 py-1 border border-red-300 rounded-full text-red-500 text-xs uppercase font-semibold">Updates</a>
+                                <button class="bg-fuchsia-700 border border-gray-700 hover:border-fuchsia-400 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in px-3 py-1">Updates</button>
+                                <button class="bg-orange-600 border border-orange-600 hover:border-orange-300 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in px-3 py-1">Techniques</button>
                             </div>
                             <div class="mt-4">
                                 <div class="text-cyan-600 tracking-wide font-semibold text-3xl text-left">This is a big title and it will look great on two or even three lines. Woohoo!</div>
-                                <span class="mt-2 block text-gray-800 text-xs">
-                                    Published <time>1 day ago</time>
-                                </span>
+                                <div class="mt-2 flex items-center text-xs text-gray-800 font-semibold space-x-2">
+                                    <div>Published 1 day ago</div>
+                                    <div>&bull;</div>
+                                    <div>3 Comments</div>
+                                </div>
                             </div>
-                            <div class="text-neutral-800 tracking-wide text-sm mt-4 text-justify">
+                            <div class="text-neutral-800 tracking-wide text-sm mt-4 text-justify line-clamp-6">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla dolor velit officia quis iusto dolorum cumque voluptatum reprehenderit totalique beatae nihil ipsa! Saepe magni doloribus magnam cupiditate ipsum quis sint.</p>
                                 <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque dolore et eveniet saepe aliquam dolor facere maxime! Vero ratione atque ad distinctio</p>
                             </div>
                             <div class="flex justify-between items-center mt-8">
                                 <div class="flex items-center text-sm">
-                                    <img src="{{ asset('img/lary-avatar.svg') }}" alt="lary avatar">
+                                    <img src="{{ asset('img/lary-avatar.svg') }}" alt="lary avatar" class="w-14 h-14 rounded-xl">
                                     <div class="ml-3 text-fuchsia-600">
                                         <h5 class="font-bold">Lary Laracore</h5>
                                         <h6>Mascot at Laracasts</h6>
                                     </div>
                                 </div>
                                 <div class="hidden lg:block">
-                                    <a href="#" class="text-xs font-semibold bg-blue-600 ml-3 rounded-full py-3 px-8 hover:bg-blue-700 transition ease-in-out duration-150">Read More</a>
+                                    <a href="#" class="text-xxs font-semibold bg-blue-600 border border-blue-600 ml-3 rounded-full py-2 px-6 hover:bg-blue-700 transition ease-in-out duration-150">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -107,29 +112,31 @@
                         </div>
                         <div class="flex flex-col justify-between mt-8">
                             <div class="space-x-2">
-                                <a href="#" class="px-3 py-1 border border-blue-300 rounded-full text-blue-500 text-xs uppercase font-semibold">Techniques</a>
-                                <a href="#" class="px-3 py-1 border border-red-300 rounded-full text-red-500 text-xs uppercase font-semibold">Updates</a>
+                                <button class="bg-fuchsia-700 border border-gray-700 hover:border-fuchsia-400 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in px-3 py-1">Updates</button>
+                                <button class="bg-orange-600 border border-orange-600 hover:border-orange-300 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in px-3 py-1">Techniques</button>
                             </div>
                             <div class="mt-4">
                                 <div class="text-cyan-600 tracking-wide font-semibold text-3xl text-left">This is a big title and it will look great on two or even three lines. Woohoo!</div>
-                                <span class="mt-2 block text-gray-800 text-xs">
-                                    Published <time>1 day ago</time>
-                                </span>
+                                <div class="mt-2 flex items-center text-xs text-gray-800 font-semibold space-x-2">
+                                    <div>Published 1 day ago</div>
+                                    <div>&bull;</div>
+                                    <div class="text-gray-900">3 Comments</div>
+                                </div>
                             </div>
-                            <div class="text-neutral-800 tracking-wide text-sm mt-4 text-justify">
+                            <div class="text-neutral-800 tracking-wide text-sm mt-4 text-justify line-clamp-5">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla dolor velit officia quis iusto dolorum cumque voluptatum reprehenderit totalique beatae nihil ipsa! Saepe magni doloribus magnam cupiditate ipsum quis sint.</p>
                                 <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque dolore et eveniet saepe aliquam dolor facere maxime! Vero ratione atque ad distinctio</p>
                             </div>
                             <div class="flex justify-between items-center mt-8">
                                 <div class="flex items-center text-sm">
-                                    <img src="{{ asset('img/lary-avatar.svg') }}" alt="lary avatar">
+                                    <img src="{{ asset('img/lary-avatar.svg') }}" alt="lary avatar" class="w-14 h-14 rounded-xl">
                                     <div class="ml-3 text-fuchsia-600">
                                         <h5 class="font-bold">Lary Laracore</h5>
                                         <h6>Mascot at Laracasts</h6>
                                     </div>
                                 </div>
                                 <div class="hidden lg:block">
-                                    <a href="#" class="text-xs font-semibold bg-blue-600 ml-3 rounded-full py-3 px-8 hover:bg-blue-700 transition ease-in-out duration-150">Read More</a>
+                                    <a href="#" class="text-xxs font-semibold bg-blue-600 border border-blue-600 ml-3 rounded-full py-2 px-6 hover:bg-blue-700 transition ease-in-out duration-150">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -137,6 +144,5 @@
                 </div>
             @endfor
         </div> <!-- end third post container -->
-
     </div> <!-- end main container -->
 @endsection
