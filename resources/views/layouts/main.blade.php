@@ -25,8 +25,8 @@
                     x-data="{ isOpen: false }"
                     class="mt-8 md:mt-0 uppercase md:flex md:justify-between md:items-center space-x-6"
                 >
-                    <a href="#" class="text-xs font-bold hover:text-blue-300 transition ease-in-out duration-150">Ideas</a>
-                    <a href="#" class="text-xs font-bold hover:text-blue-300 transition ease-in-out duration-150">Home</a>
+                    <a href="#" class="text-xs font-bold hover:text-blue-400 transition ease-in-out duration-150">Ideas</a>
+                    <a href="#" class="text-xs font-bold hover:text-blue-400 transition ease-in-out duration-150">Home</a>
                     <a href="#" class="text-xs font-semibold bg-blue-600 rounded-full py-3 px-5 hover:bg-blue-700 transition ease-in-out duration-150">Subscribe for updates</a>
                     <div
                         @click="isOpen = !isOpen"
@@ -41,27 +41,27 @@
                             x-transition
                             @click.away="isOpen = false"
                             @keydown.escape.window="isOpen = false"
-                            class="px-4 py-6 absolute z-10 w-40 text-left font-semibold text-sm bg-white shadow-pink-400 shadow-lg rounded-xl mt-2 md:top-10 md:right-0"
+                            class="px-4 py-6 absolute z-10 w-40 text-left font-semibold text-sm bg-white shadow-green-600 shadow-lg rounded-xl mt-2 md:top-10 md:right-0"
                         >
                             @if (Route::has('login'))
                                 <div class="flex flex-col space-y-2">
                                     @auth
-                                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 hover:text-pink-600 transition duration-150 ease-in-out">Dashboard</a>
+                                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 hover:text-blue-700 transition duration-150 ease-in-out">Dashboard</a>
 
                                         <!-- Authentication -->
                                         <form method="POST" action="{{ route('logout') }}">
                                             @csrf
-                                            <a href="{{ route('logout') }}" class="text-sm text-gray-700 hover:text-pink-600 transition duration-150 ease-in-out"
+                                            <a href="{{ route('logout') }}" class="text-sm text-gray-700 hover:text-blue-700 transition duration-150 ease-in-out"
                                                     onclick="event.preventDefault();
                                                                 this.closest('form').submit();">
                                                 {{ __('Log Out') }}
                                             </a>
                                         </form>
                                     @else
-                                        <a href="{{ route('login') }}" class="text-sm text-gray-700 hover:text-pink-600 transition duration-150 ease-in-out">Log in</a>
+                                        <a href="{{ route('login') }}" class="text-sm text-gray-700 hover:text-blue-700 transition duration-150 ease-in-out">Log in</a>
 
                                         @if (Route::has('register'))
-                                            <a href="{{ route('register') }}" class="text-sm text-gray-700 hover:text-pink-600 transition duration-150 ease-in-out">Register</a>
+                                            <a href="{{ route('register') }}" class="text-sm text-gray-700 hover:text-blue-700 transition duration-150 ease-in-out">Register</a>
                                         @endif
                                     @endauth
                                 </div>
