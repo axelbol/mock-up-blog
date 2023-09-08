@@ -61,7 +61,7 @@
             </div>
         </div> <!-- end-recently-post-container -->
 
-        <div class="secondary-post-container lg:grid lg:grid-cols-2 space-x-1">
+        <div class="secondary-post-container lg:grid lg:grid-cols-2 gap-x-2">
             @for ($i = 0; $i < 2; $i++)
                 <div class="bg-gray-200 rounded-xl border border-green-800 hover:shadow-md hover:shadow-green-700 transition ease-in-out duration-700 cursor-pointer">
                     <div class="p-6">
@@ -103,7 +103,7 @@
             @endfor
         </div> <!-- end secondary post container -->
 
-        <div class="third-post-container grid grid-cols-3 space-x-1">
+        <div class="third-post-container grid grid-cols-3 gap-x-2">
             @for ($i = 0; $i < 3; $i++)
                 <div class="bg-gray-200 rounded-xl border border-green-800 hover:shadow-md hover:shadow-green-700 transition ease-in-out duration-150 cursor-pointer">
                     <div class="p-6">
