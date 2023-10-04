@@ -61,15 +61,41 @@
                         <button class="bg-green-700 hover:bg-green-800 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in-out px-3 py-1">Random</button>
                     </div>
                 </div>
-                <h1 class="text-gray-200 font-bold text-4xl mt-6">This is a big title and it will look great on two or even three lines.</h1>
+                <h1 class="text-gray-200 font-bold text-4xl mt-6">Let us know your next big idea.</h1>
                 <div class="space-y-5 text-lg text-justify tracking-wide">
-                    <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, fugiat sit quia dolorum quisquam nulla dolor ratione doloribus. Rem cupiditate porro blanditiis delectus reprehenderit magnam voluptas similique aut asperiores. Enim, quia, velit rem commodi incidunt officia id, perspiciatis accusantium suscipit sunt quae adipisci beatae a reprehenderit voluptatem repudiandae repellat? Quo.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ullam beatae exercitationem saepe repellat praesentium, at et voluptates! Dolorem, necessitatibus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error architecto autem nobis in harum esse dolores. Rerum deleniti aut placeat animi possimus nam a ex, quo at? Magni, consectetur neque, quo esse rerum harum, consequuntur dolore doloremque dolores tempore corrupti est alias mollitia earum voluptates accusamus sapiente dicta vel voluptatum!</p>
-                    <h2 class="font-bold text-lg">Lorem ipsum dolor sit amet.<h2/>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus quia, neque ex cupiditate in iusto sequi perspiciatis fugit illum.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio beatae ad, consequatur ducimus dolorum tenetur dolore suscipit nostrum porro repellendus fugit fugiat asperiores est praesentium quas ipsa. Repellendus repudiandae iure, in voluptatum quas voluptate sunt, molestiae dolorum praesentium fugit esse eligendi. In omnis harum consequuntur pariatur dolorum laboriosam ratione?</p>
-                    <h2 class="font-bold text-end text-lg">Lorem ipsum dolor sit amet.<h2/>
+                    <!-- idea card -->
+                    <div class="border-2 border-green-600 rounded-xl mt-10 bg-purple-700">
+                        <div class="text-center px-6 py-2 pt-6">
+                            <p class="text-sm mt-4">Tell us about this person you want us to interview</p>
+                            <form action="#" method="POST" class="space-y-4 px-4 py-6">
+                                <div>
+                                    <input type="text" class="w-full text-sm bg-gray-100 text-purple-700 border-none rounded-xl placeholder-purple-700 px-4 py-2" placeholder="Name">
+                                </div>
+                                <div>
+                                    <select name="social_media" id="social_media" class="w-full bg-gray-100 text-purple-700 text-sm rounded-xl border-none px-4 py-2">
+                                        <option value="facebook">Facebook</option>
+                                        <option value="instagram">Instagram</option>
+                                        <option value="twitter">Twitter</option>
+                                        <option value="whatsapp">Whatsapp</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <input type="text" class="w-full text-sm bg-gray-100 text-purple-700 border-none rounded-xl placeholder-purple-700 px-4 py-2" placeholder="Social Media Link">
+                                </div>
+                                <div>
+                                    <textarea name="idea" id="idea" cols="30" rows="4" class="w-full bg-gray-100 rounded-xl text-purple-700 border-none placeholder-purple-700 text-sm px-4 py-2" placeholder="Describe your idea"></textarea>
+                                </div>
+                                <div class="flex items-center justify-between space-x-3">
+                                    <button type="button" class="flex items-center justify-center w-1/2 h-11 text-xs bg-gray-200 text-purple-700 font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 ease-in px-6 py-3">
+                                        <span class="ml-2">Attach</span>
+                                    </button>
+                                    <button type="submit" class="flex items-center justify-center w-1/2 h-11 text-xs bg-blue-700 text-white font-semibold rounded-xl border border-blue-700 hover:bg-blue-600 transition duration-150 ease-in px-6 py-3">
+                                        <span class="ml-2">Enviar</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> <!-- end idea card -->
 
                     <div class="flex items-center justify-between mt-12">
                         <div class="flex">
@@ -95,7 +121,6 @@
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
