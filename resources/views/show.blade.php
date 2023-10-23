@@ -65,8 +65,20 @@
                 <div class="space-y-5 text-lg text-justify tracking-wide">
                     <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, fugiat sit quia dolorum quisquam nulla dolor ratione doloribus. Rem cupiditate porro blanditiis delectus reprehenderit magnam voluptas similique aut asperiores. Enim, quia, velit rem commodi incidunt officia id, perspiciatis accusantium suscipit sunt quae adipisci beatae a reprehenderit voluptatem repudiandae repellat? Quo.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ullam beatae exercitationem saepe repellat praesentium, at et voluptates! Dolorem, necessitatibus.</p>
+
+                    <figure class="max-w-full">
+                        <img class="h-auto max-w-full rounded-lg" src="{{ asset('img/blog/img1.jpg') }}" alt="image description">
+                        <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Image caption</figcaption>
+                    </figure>
+
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error architecto autem nobis in harum esse dolores. Rerum deleniti aut placeat animi possimus nam a ex, quo at? Magni, consectetur neque, quo esse rerum harum, consequuntur dolore doloremque dolores tempore corrupti est alias mollitia earum voluptates accusamus sapiente dicta vel voluptatum!</p>
                     <h2 class="font-bold text-lg">Lorem ipsum dolor sit amet.<h2/>
+
+                    <figure class="max-w-full">
+                        <img class="h-auto max-w-full rounded-lg" src="{{ asset('img/blog/img.jpg') }}" alt="image description">
+                        <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Image caption</figcaption>
+                    </figure>
+
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus quia, neque ex cupiditate in iusto sequi perspiciatis fugit illum.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio beatae ad, consequatur ducimus dolorum tenetur dolore suscipit nostrum porro repellendus fugit fugiat asperiores est praesentium quas ipsa. Repellendus repudiandae iure, in voluptatum quas voluptate sunt, molestiae dolorum praesentium fugit esse eligendi. In omnis harum consequuntur pariatur dolorum laboriosam ratione?</p>
                     <h2 class="font-bold text-end text-lg">Lorem ipsum dolor sit amet.<h2/>

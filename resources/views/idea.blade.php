@@ -4,7 +4,7 @@
     <div class="container bg-gray-700 rounded-xl py-8 max-w-6xl mx-auto mt-6 md:mt-8">
         <div class="max-w-4xl mx-auto md:grid md:grid-cols-12 gap-x-10 pt-10">
             <div class="col-span-4 text-center">
-                <img src="{{ asset('img/illustration-1.png') }}" alt="image" class="rounded-xl">
+                <img src="{{ asset('img/illustration-1.png') }}" alt="image" class="rounded-xl blur-sm hover:blur-none">
 
                 <div class="mt-4 block text-gray-300 font-semibold text-xs">
                     Published 1 day ago
