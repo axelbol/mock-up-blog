@@ -1,23 +1,23 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="container bg-gray-700 rounded-xl py-8 max-w-6xl mx-auto mt-6 md:mt-8">
+    <div class="container md:bg-gray-700 rounded-xl py-0 md:py-8 max-w-6xl mx-auto mt-0 md:mt-8">
         <div class="max-w-4xl mx-auto md:grid md:grid-cols-12 gap-x-10 pt-10">
-            <div class="col-span-4 text-center">
+            <div class="md:col-span-4 text-left md:text-center">
                 <img src="{{ asset('img/illustration-1.png') }}" alt="image" class="rounded-xl blur-sm hover:blur-none">
 
                 <div class="mt-4 block text-gray-300 font-semibold text-xs">
                     Published 1 day ago
                 </div>
 
-                <div class="flex items-center justify-center text-sm mt-4">
+                <div class="flex flex-row items-center md:justify-center text-sm mt-4">
                     <img src="img/lary-avatar.svg" alt="Lary Avatar" class="w-14 h-14 rounded-xl">
                     <div class="ml-3 text-left text-gray-300">
                         <h5 class="font-bold">Lary Laracore</h5>
                         <h6>Mascot at Laracasts</h6>
                     </div>
                 </div>
-                <ul class="flex items-center justify-center mt-6">
+                <ul class="flex flex-row items-center justify-center mt-6">
                     <li>
                         <a href="#" title="Compartir en Facebook">
                             <svg class="fill-current text-gray-400 hover:text-white w-4" viewBox="0 0 448 512">
@@ -49,23 +49,23 @@
                 </ul>
             </div>
 
-            <div class="col-span-8">
-                <div class="flex items-center justify-between -mt-10">
-                    <a href="#" class="relative inline-flex items-center text-sm hover:text-blue-400 transition duration-150 ease-in-out">
+            <div class="md:col-span-8">
+                <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:justify-between mt-4 md:-mt-10">
+                    <a href="#" class="hidden relative md:inline-flex items-center text-sm hover:text-blue-400 transition duration-150 ease-in-out">
                         <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
                         Back to posts
                     </a>
-                    <div class="space-x-2">
+                    <div class="hidden space-x-2">
                         <button class="bg-fuchsia-600 hover:bg-fuchsia-700 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in-out px-3 py-1">Updates</button>
                         <button class="bg-orange-500 hover:bg-orange-600 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in-out px-3 py-1">Techniques</button>
                         <button class="bg-green-700 hover:bg-green-800 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in-out px-3 py-1">Random</button>
                     </div>
                 </div>
-                <h1 class="text-gray-200 font-bold text-4xl mt-6">Let us know your next big idea.</h1>
+                <h1 class="text-gray-200 font-bold text-4xl mt-2 md:mt-6">Let us know your next big idea.</h1>
                 <div class="space-y-5 text-lg text-justify tracking-wide">
                     <!-- idea card -->
                     <div class="border-2 border-green-600 rounded-xl mt-10 bg-purple-700">
-                        <div class="text-center px-6 py-2 pt-6">
+                        <div class="text-center px-2 md:px-6 py-2 pt-6">
                             <p class="text-sm mt-4">Tell us about this person you want us to interview</p>
                             <form action="#" method="POST" class="space-y-4 px-4 py-6">
                                 <div>
@@ -85,8 +85,8 @@
                                 <div>
                                     <textarea name="idea" id="idea" cols="30" rows="4" class="w-full bg-gray-100 rounded-xl text-purple-700 border-none placeholder-purple-700 text-sm px-4 py-2" placeholder="Describe your idea"></textarea>
                                 </div>
-                                <div class="flex items-center justify-between space-x-3">
-                                    <button type="button" class="flex items-center justify-center w-1/2 h-11 text-xs bg-gray-200 text-purple-700 font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 ease-in px-6 py-3">
+                                <div class="flex items-center justify-end md:justify-between md:space-x-3">
+                                    <button type="button" class="hidden md:flex items-center justify-center w-1/2 h-11 text-xs bg-gray-200 text-purple-700 font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 ease-in px-6 py-3">
                                         <span class="ml-2">Attach</span>
                                     </button>
                                     <button type="submit" class="flex items-center justify-center w-1/2 h-11 text-xs bg-blue-700 text-white font-semibold rounded-xl border border-blue-700 hover:bg-blue-600 transition duration-150 ease-in px-6 py-3">
@@ -104,7 +104,7 @@
                                 Back to posts
                             </a>
                         </div>
-                        <ul class="flex items-center">
+                        <ul class="hidden items-center">
                             <li>
                                 <a href="#" title="Compartir en Facebook">
                                     <svg class="fill-current text-gray-400 hover:text-white w-4" viewBox="0 0 448 512">

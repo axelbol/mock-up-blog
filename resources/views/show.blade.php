@@ -1,23 +1,27 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="container bg-gray-700 rounded-xl py-8 max-w-6xl mx-auto mt-6 md:mt-8">
+    <div class="container md:bg-gray-700 rounded-xl py-0 md:py-8 max-w-6xl mx-auto -mt-12 md:mt-8">
         <div class="max-w-4xl mx-auto md:grid md:grid-cols-12 gap-x-10 pt-10">
-            <div class="col-span-4 text-center">
+            <div class="md:col-span-4 text-left md:text-center">
                 <img src="{{ asset('img/illustration-1.png') }}" alt="image" class="rounded-xl">
 
                 <div class="mt-4 block text-gray-300 font-semibold text-xs">
                     Published 1 day ago
                 </div>
 
-                <div class="flex items-center justify-center text-sm mt-4">
+                <div class="flex flex-row items-center md:justify-center text-sm mt-4">
                     <img src="img/lary-avatar.svg" alt="Lary Avatar" class="w-14 h-14 rounded-xl">
                     <div class="ml-3 text-left text-gray-300">
                         <h5 class="font-bold">Lary Laracore</h5>
                         <h6>Mascot at Laracasts</h6>
                     </div>
                 </div>
-                <ul class="flex items-center justify-center mt-6">
+
+                <div class="md:hidden mt-4 block text-gray-300 font-semibold text-xs">
+                    Compartir publicación:
+                </div>
+                <ul class="flex flex-row items-center justify-center mt-2 md:mt-6">
                     <li>
                         <a href="#" title="Compartir en Facebook">
                             <svg class="fill-current text-gray-400 hover:text-white w-4" viewBox="0 0 448 512">
@@ -49,39 +53,40 @@
                 </ul>
             </div>
 
-            <div class="col-span-8">
-                <div class="flex items-center justify-between -mt-10">
-                    <a href="#" class="relative inline-flex items-center text-sm hover:text-blue-400 transition duration-150 ease-in-out">
+            <div class="md:col-span-8">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-start space-y-4 md:space-y-0 md:justify-between mt-1 md:-mt-10">
+                    <a href="#" class="hidden relative md:inline-flex items-center text-sm hover:text-blue-400 transition duration-150 ease-in-out">
                         <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
                         Back to posts
                     </a>
-                    <div class="space-x-2">
+                    <div class="space-x-0 md:space-x-2 space-y-2 md:space-y-0 flex flex-col md:flex-row">
                         <button class="bg-fuchsia-600 hover:bg-fuchsia-700 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in-out px-3 py-1">Updates</button>
                         <button class="bg-orange-500 hover:bg-orange-600 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in-out px-3 py-1">Techniques</button>
+                        <button class="bg-green-700 hover:bg-green-800 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in-out px-3 py-1">Random</button>
                         <button class="bg-green-700 hover:bg-green-800 font-bold text-xxs uppercase rounded-xl transition duration-150 ease-in-out px-3 py-1">Random</button>
                     </div>
                 </div>
                 <h1 class="text-gray-200 font-bold text-4xl mt-6">This is a big title and it will look great on two or even three lines.</h1>
-                <div class="space-y-5 text-lg text-justify tracking-wide">
+                <div class="space-y-5 text-xl md:text-lg text-justify tracking-wide">
                     <p class="mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, fugiat sit quia dolorum quisquam nulla dolor ratione doloribus. Rem cupiditate porro blanditiis delectus reprehenderit magnam voluptas similique aut asperiores. Enim, quia, velit rem commodi incidunt officia id, perspiciatis accusantium suscipit sunt quae adipisci beatae a reprehenderit voluptatem repudiandae repellat? Quo.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ullam beatae exercitationem saepe repellat praesentium, at et voluptates! Dolorem, necessitatibus.</p>
 
                     <figure class="max-w-full">
                         <img class="h-auto max-w-full rounded-lg" src="{{ asset('img/blog/img1.jpg') }}" alt="image description">
-                        <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Image caption</figcaption>
+                        <figcaption class="mt-2 text-sm text-center text-gray-400">Image caption</figcaption>
                     </figure>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error architecto autem nobis in harum esse dolores. Rerum deleniti aut placeat animi possimus nam a ex, quo at? Magni, consectetur neque, quo esse rerum harum, consequuntur dolore doloremque dolores tempore corrupti est alias mollitia earum voluptates accusamus sapiente dicta vel voluptatum!</p>
-                    <h2 class="font-bold text-lg">Lorem ipsum dolor sit amet.<h2/>
+                    <h2 class="font-bold text-xl md:text-lg">Lorem ipsum dolor sit amet.<h2/>
 
                     <figure class="max-w-full">
                         <img class="h-auto max-w-full rounded-lg" src="{{ asset('img/blog/img.jpg') }}" alt="image description">
-                        <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Image caption</figcaption>
+                        <figcaption class="mt-2 text-sm text-center text-gray-400">Image caption</figcaption>
                     </figure>
 
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus quia, neque ex cupiditate in iusto sequi perspiciatis fugit illum.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea optio beatae ad, consequatur ducimus dolorum tenetur dolore suscipit nostrum porro repellendus fugit fugiat asperiores est praesentium quas ipsa. Repellendus repudiandae iure, in voluptatum quas voluptate sunt, molestiae dolorum praesentium fugit esse eligendi. In omnis harum consequuntur pariatur dolorum laboriosam ratione?</p>
-                    <h2 class="font-bold text-end text-lg">Lorem ipsum dolor sit amet.<h2/>
+                    <h2 class="font-bold text-end text-sm">Lorem ipsum dolor sit amet.<h2/>
 
                     <div class="flex items-center justify-between mt-12">
                         <div class="flex">
