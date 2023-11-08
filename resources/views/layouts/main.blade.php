@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Laracasts Blog</title>
+        <title>Blog</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Open+Sans:wght@400;600;700&display=swap">
@@ -106,7 +106,7 @@
             </div>
 
             <div class="container mx-auto px-4 py-6 text-gray-300">
-                Powered By <a href="#" class="hover:text-gray-100 hover:underline">IGDB API</a>
+                Powered by <a href="#" class="hover:text-gray-100 hover:underline">Dot Code</a> <span class="text-yellow-500"> | </span>Feel free to use it
             </div>
         </footer>
     </body>

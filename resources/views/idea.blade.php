@@ -12,9 +12,9 @@
 
                 <div class="flex flex-row items-center md:justify-center text-sm mt-4">
                     <img src="img/lary-avatar.svg" alt="Lary Avatar" class="w-14 h-14 rounded-xl">
-                    <div class="ml-3 text-left text-gray-300">
-                        <h5 class="font-bold">Lary Laracore</h5>
-                        <h6>Mascot at Laracasts</h6>
+                    <div class="ml-3 text-left text-gray-300>
+                        <h5 class="font-bold">Dot Code</h5>
+                        <h6>Creator</h6>
                     </div>
                 </div>
                 <ul class="flex flex-row items-center justify-center mt-6">

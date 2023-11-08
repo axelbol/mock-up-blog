@@ -4,9 +4,9 @@
     <div class="container max-w-4xl mx-auto mt-2 md:mt-8 text-center"> <!-- info-container -->
         <div class="max-w-xl mx-auto">
             <h1 class="text-4xl">
-                Latest <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-green-500 relative inline-block"><span class="relative text-white"> Laravel </span></span><span class="text-blue-500"> From Scratch </span> News
+                Latest <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-green-500 relative inline-block"><span class="relative text-white"> News </span></span><span class="text-blue-500"> From the Web </span> 2023
             </h1>
-            <h2 class="flex justify-center items-center mt-4">by Lary Laracore <img src="{{ asset('img/lary-head.svg') }}" alt="Lary Head" class="ml-1 motion-safe:animate-bounce"></h2>
+            <h2 class="flex justify-center items-center mt-4">by Dot Coding <img src="{{ asset('img/head.svg') }}" alt="Head" class="ml-1 motion-safe:animate-bounce"></h2>
             <p class="text-md md:text-sm mt-8 text-ellipsis text-center">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias rerum reprehenderit voluptates expedita quae at odit sapiente vel impedit, excepturi nemo debitis laboriosam rem harum exercitationem officia amet mollitia eos? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur earum sapiente quam repudiandae minima natus vero dolor rem molestias blanditiis assumenda ratione mollitia delectus molestiae, ex dolores, a, numquam unde.
             </p>
@@ -26,7 +26,7 @@
         <div class="recently-post-container bg-gray-200 rounded-xl border border-green-800 hover:shadow-md hover:shadow-green-700 transition ease-in-out duration-150 cursor-pointer"> <!-- recently-post-container -->
             <div class="p-8 md:flex flex-row justify-between">
                 <div class="flex-1 md:mr-8">
-                    <img src="{{ asset('img/illustration-1.png') }}" alt="illustration" class="rounded-xl">
+                    <img src="{{ asset('img/blog/http.jpg') }}" alt="illustration" class="w-full rounded-xl">
                 </div>
                 <div class="flex-1 flex flex-col justify-between mt-8 md:mt-0">
                     <div class="space-x-2">
@@ -49,8 +49,8 @@
                         <div class="flex items-center text-sm">
                             <img src="{{ asset('img/lary-avatar.svg') }}" alt="lary avatar" class="w-14 h-14 rounded-xl">
                             <div class="ml-3">
-                                <h5 class="text-cyan-900 font-bold">Lary Laracore</h5>
-                                <h6 class="text-cyan-800">Mascot at Laracasts</h6>
+                                <h5 class="text-cyan-900 font-bold">Mat Core</h5>
+                                <h6 class="text-cyan-800">Head of content</h6>
                             </div>
                         </div>
                         <div class="hidden md:block">
@@ -66,7 +66,7 @@
                 <div class="bg-gray-200 rounded-xl border border-green-800 hover:shadow-md hover:shadow-green-700 transition ease-in-out duration-700 cursor-pointer">
                     <div class="p-6">
                         <div>
-                            <img src="{{ asset('img/illustration-2.png') }}" alt="illustration" class="rounded-xl">
+                            <img src="{{ asset('img/blog/Composer.png') }}" alt="illustration" class="rounded-xl">
                         </div>
                         <div class="flex flex-col justify-between">
                             <div class="space-x-2 mt-4">
@@ -89,8 +89,8 @@
                                 <div class="flex items-center text-sm">
                                     <img src="{{ asset('img/lary-avatar.svg') }}" alt="lary avatar" class="w-14 h-14 rounded-xl">
                                     <div class="ml-3">
-                                        <h5 class="text-cyan-900 font-bold">Lary Laracore</h5>
-                                        <h6 class="text-cyan-800">Mascot at Laracasts</h6>
+                                        <h5 class="text-cyan-900 font-bold">Sara Colg</h5>
+                                        <h6 class="text-cyan-800">Publisher</h6>
                                     </div>
                                 </div>
                                 <div class="hidden lg:block">
@@ -108,7 +108,7 @@
                 <div class="bg-gray-200 rounded-xl border border-green-800 hover:shadow-md hover:shadow-green-700 transition ease-in-out duration-150 cursor-pointer">
                     <div class="p-6">
                         <div>
-                            <img src="{{ asset('img/illustration-3.png') }}" alt="illustration" class="rounded-xl">
+                            <img src="{{ asset('img/blog/matrix.jpg') }}" alt="illustration" class="rounded-xl">
                         </div>
                         <div class="flex flex-col justify-between">
                             <div class="space-x-2 mt-4">
@@ -131,8 +131,8 @@
                                 <div class="flex items-center text-sm">
                                     <img src="{{ asset('img/lary-avatar.svg') }}" alt="lary avatar" class="w-14 h-14 rounded-xl">
                                     <div class="ml-3">
-                                        <h5 class="text-cyan-900 font-bold">Lary Laracore</h5>
-                                        <h6 class="text-cyan-800">Mascot at Laracasts</h6>
+                                        <h5 class="text-cyan-900 font-bold">Andrew Stein</h5>
+                                        <h6 class="text-cyan-800">Publisher Junior</h6>
                                     </div>
                                 </div>
                                 <div class="hidden lg:block">
